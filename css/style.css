@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: black;
+  font-size: 16px;
+  background: #fff;
+}
+
+/* Nav Top and Buttom Backgrounds */
+
+.nav-top {
+  height: 430px;
+  background: linear-gradient(to top, #426972, #6ec9cf);
+  position: relative;
+}
+
+.nav-down {
+  height: 300px;
+  background: rgb(115, 212, 212);
+  border-radius: 0 0 80px 80px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-menu,
+.logo,
+.btn {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar {
+  /* padding: 20px; */
+  /* height: 350px; */
+  border-bottom: 0.2px solid rgb(119, 194, 219);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.container .logo h1 {
+  font-size: 25px;
+  color: #000;
+  /* text-shadow: 0 2px 5px black; */
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  padding-left: 15px;
+  font-weight: 400;
+  font-family: arial;
+}
+
+.main-menu ul li:last-child {
+  margin-right: 250px;
+}
+
+.navbar a:hover {
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  transition: 1.5s;
+  border: #000 solid 1px;
+  background: #000;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.container i {
+  color: rgb(36, 35, 35);
+  padding: 0 5px;
+}
+
+.btn {
+  display: block;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  align-items: center;
+  color: #000;
+}
+
+.container .btn:hover {
+  background-color: #d6d0d0;
+  color: #fff;
+  transition: 1.5s;
+  border: #333 solid 1px;
+}
+
+.main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.main p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+form {
+  background-color: #fff;
+  width: 560px;
+  height: 50px;
+  border-radius: 35px;
+  padding: 20px 10px 20px 20px;
+}
+
+form .search-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  font-size: 16px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-right: 20px;
+}
+
+.search-bar button {
+  font-size: 15px;
+  width: 110px;
+  height: 40px;
+  border: none;
+  background-color: rgb(115, 212, 212);
+  color: #fff;
+  border-radius: 35px;
+}
+
+.search-bar button:hover {
+  cursor: pointer;
+}
+
+.search-bar i {
+  font-size: 20px;
+  color: gray;
+  padding-right: 20px;
+}
+
+/* .nav-down {
+  display: flex;
+  justify-content: center;
+} */
+
+.cardboard1 {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 160px;
+  left: 20%;
+}
+
+.cardboard1 .card1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  padding: 15px 20px 0px 20px;
+  background: #fff;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.cardboard1 .card2 {
+  margin-right: 20px;
+  padding: 15px 20px 0px 20px;
+  background: #fff;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.cardboard1 .card2 {
+  width: 450px;
+  position: relative;
+  background: #14646b;
+}
+
+.cardboard1 .card2::before {
+  content: "";
+  background-image: url(../images/businesswoman-using-tablet-analysis.jpg);
+  background-size: cover;
+  position: absolute;
+  inset: 0px;
+  border-radius: 15px;
+  opacity: 0.4;
+}
+
+.cardboard1 .card2 .fin-top {
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 90%;
+  font-size: 13.5px;
+  text-align: justify;
+  padding-bottom: 25px;
+  /* position: relative; */
+  color: #fff;
+}
+
+.cardboard1 .card2 button {
+  font-size: 13px;
+  width: 105px;
+  height: 30px;
+  border: none;
+  background-color: rgb(115, 212, 212);
+  color: #fff;
+  border-radius: 35px;
+  /* position: relative; */
+}
+
+.card p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card1 .num,
+.card2 .num {
+  display: flex;
+  justify-content: center;
+  width: 25px;
+  background: rgb(0, 153, 255);
+  border-radius: 5px;
+  color: #fff;
+  /* position: relative; */
+}
+
+.card img {
+  width: 100%;
+}
+
+.card1 .card-top {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size: 15px;
+  /* position: relative; */
+}
+
+.card2 .card-top {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size: 15px;
+  /* position: relative; */
+  color: #fff;
+}
+
+/* Nav Mid */
+
+.nav-mid .browse {
+  text-align: center;
+  margin: 40px 0 25px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.topics .top-ics {
+  display: flex;
+  justify-content: center;
+  padding: 13px;
+  border-bottom: #f7f4f4 solid 1.5px;
+}
+
+.top-ics ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-ics ul a {
+  color: #575656;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 25px 25px 15px 25px;
+}
+
+.top-ics ul a:focus {
+  border-bottom: #000 solid 1.5px;
+}
+
+/* Nav Next Cardboard2 */
+
+.nav-next {
+  height: 100vh;
+}
+
+.nav-next .cardboard2 {
+  display: flex;
+  justify-content: center;
+}
+
+.cardboard2 .card {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  margin-top: 30px;
+  padding: 15px 20px 0px 20px;
+  background: #ffffff;
+  width: 25%;
+  height: 250px;
+  border-radius: 15px;
+  font-size: 12px;
+  box-shadow: 0 10px 40px rgb(223, 228, 230);
+}
+
+.card p {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 85%;
+}
+
+.card .num,
+.card .num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  font-size: 10px;
+  background: rgb(0, 153, 255);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.card img {
+  width: 250px;
+}
+
+.card .third-img {
+  width: 180px;
+  padding-left: 40px;
+}
+
+.card .card-top {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
